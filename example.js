@@ -3,8 +3,7 @@ const dotenv = require('dotenv')
 const logger = require('elogger');
 
 dotenv.config();
-//  connect to database
-console.log(process.env.MONGODB_URL)
+//  connect to database\
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
