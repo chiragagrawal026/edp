@@ -41,15 +41,16 @@ app.post('/', (async (req, res) => {
     await blockChain.initialize();
 
     // for (let idx = 1; idx <= 10; idx++) {
-    let payload = {
-        user: "1",
-        ip: '127.0.0.1',
-        user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97',
-        action: 'TEST_ACTION',
-        rtype: 'TEST',
-        ref_id: 'TEST_00' + 56,
-        created_on: new Date().getTime()
-    };
+    // let payload = {
+    //     user: "1",
+    //     ip: '127.0.0.1',
+    //     user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97',
+    //     action: 'TEST_ACTION',
+    //     rtype: 'TEST',
+    //     ref_id: 'TEST_00' + 56,
+    //     created_on: new Date().getTime()
+    // };
+    let payload= req.body
     // logger.info(`New Block Request: ${payload.ref_id}`);
     let entry = await blockChain.createTransaction(payload);
     // logger.info(`New Transaction: ${entry.id}`);
