@@ -47,7 +47,7 @@ app.post('/', (async (req, res) => {
         user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97',
         action: 'TEST_ACTION',
         rtype: 'TEST',
-        ref_id: 'TEST_00' + idx,
+        ref_id: 'TEST_00' + 56,
         created_on: new Date().getTime()
     };
     // logger.info(`New Block Request: ${payload.ref_id}`);
@@ -58,6 +58,7 @@ app.post('/', (async (req, res) => {
     let status = await blockChain.checkChainValidity();
     logger.info(`Chain Status: ${(status) ? 'SUCCESS' : 'FAILED'}`);
     // process.exit(0);
+    return res.send("got")
 }));
 
 
