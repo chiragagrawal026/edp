@@ -1,5 +1,11 @@
 /**
+ * @name Checking for outbound request
+ * @description A custom query to check the same
  * @kind path-problem
+ * @problem.severity warning
+ * @precision high
+ * @id javascript/grid-outsourcing
+ * @tags security
  */
 
 import javascript
