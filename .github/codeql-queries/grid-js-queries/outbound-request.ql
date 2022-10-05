@@ -2,7 +2,7 @@
  * @name Checking for outbound request
  * @description A custom query to check the same
  * @kind path-problem
- * @problem.severity warning
+ * @problem.severity error
  * @precision high
  * @id javascript/grid-outsourcing
  * @tags security
