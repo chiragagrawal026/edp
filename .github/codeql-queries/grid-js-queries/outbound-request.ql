@@ -1,3 +1,7 @@
+/**
+ * @kind path-problem
+ */
+
 import javascript
 import semmle.javascript.PackageExports as Exports
 import DataFlow::PathGraph
