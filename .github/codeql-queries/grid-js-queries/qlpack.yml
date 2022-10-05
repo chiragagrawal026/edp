@@ -1,4 +1,4 @@
 name: grid-js-queries
 version: 0.0.0
-libraryPathDependencies: codeql-js
-suites: grid-js-suite
+libraryPathDependencies: codeql-javascript
+suites: grid-javascript-suite
