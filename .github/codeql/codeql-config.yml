@@ -1,0 +1,5 @@
+name: "Grid CodeQL config"
+
+queries:
+    - uses: ./.github/codeql-queries/grid-code-scanning.qls
+    - uses: ./.github/codeql-queries/grid-js-queries
